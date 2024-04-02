@@ -1,35 +1,37 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-  }
-  
-  .container {
+html{
+    font-family: 'roboto', sans-serif;
+    color: #001B2E
+}
+
+body{
+    background-color: #D7DAE5;
+}
+.container {
     max-width: 400px;
     margin: 50px auto;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  h1 {
+    background-color: #A49E8D;
+    border-radius: 100px;
     text-align: center;
   }
   
-  label {
-    display: block;
-    margin-bottom: 10px;
+  .input-group {
+    display: inline-block; 
+    text-align: left; 
   }
   
-  input[type="date"] {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
+  .input-group label {
+    margin-right: 10px;
+  }
+  
+  input[type="number"] {
+    width: 60px;
   }
   
   button {
     display: block;
-    width: 100%;
+    margin: 0 auto;
+    width: 100px;
     padding: 10px;
     background-color: #007bff;
     color: #fff;
@@ -48,3 +50,7 @@ body {
     font-weight: bold;
   }
   
+  #month,#date{
+    color:E4FDE1;
+    background-color: #D7DAE5;
+  }
