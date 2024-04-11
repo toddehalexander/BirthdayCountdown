@@ -1,56 +1,69 @@
-html{
-    font-family: 'roboto', sans-serif;
-    color: #001B2E
+:root {
+  --custom-color: #D7DAE5; /* Default background color */
+  --text-color: #001B2E; /* Default text color */
+  --container-color: #A49E8D; /* Default container color */
 }
 
-body{
-    background-color: #D7DAE5;
+html {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
 }
+
+body {
+  background-color: var(--custom-color);
+}
+
 .container {
-    max-width: 400px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #A49E8D;
-    border-radius: 100px;
-    text-align: center;
-  }
-  
-  .input-group {
-    display: inline-block; 
-    text-align: left; 
-  }
-  
-  .input-group label {
-    margin-right: 10px;
-  }
-  
-  input[type="number"] {
-    width: 60px;
-  }
-  
-  button {
-    display: block;
-    margin: 0 auto;
-    width: 100px;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  p#countdown {
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: bold;
-  }
-  
-  #month,#date{
-    color:E4FDE1;
-    background-color: #D7DAE5;
-  }
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: var(--container-color);
+  border-radius: 20px; /* Adjusted border radius */
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  color: var(--text-color); /* Ensure text color matches the custom text color variable */
+}
+
+.custom-color {
+  background-color: var(--custom-color);
+}
+
+.input-group {
+  display: inline-block;
+  text-align: left;
+}
+
+.input-group label {
+  margin-right: 10px;
+}
+
+input[type="number"] {
+  width: 60px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  width: 100px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+p#countdown {
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+#month, #date {
+  background-color: var(--custom-color);
+  color: var(--text-color);
+}
